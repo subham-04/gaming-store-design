@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="icon" type="image/png" href="play-button.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="player">
+        <video src="Gaming Store Page Design With Figma @Figma.mp4" playsinline poster="/poster.png" class="video"></video>
+        
+        <!-- Show controls -->
+        <div class="show-controls">
+            <!-- Controls container -->
+            <div class="controls-container">
+                <!-- Progressbar -->
+                <div class="progress-range" title="seek">
+                    <div class="progress-bar"></div>
+                </div>
+                
+                <div class="control-group">
+
+                    <!-- Left control -->
+                    <div class="controls-left">
+                        <!-- Play -->
+                        <div class="play-controls">
+                            <i class="fa-solid fa-play" title="play" id="play-btn"></i>
+                        </div>
+                        <div class="volume">
+                            <div class="volume-icon">
+                                <i class="fa-solid fa-volume-high" title="mute" id="volume-icon"></i>
+                            </div>
+                            <div class="volume-range" title="change volume">
+                                <div class="volume-bar"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                    <!-- Right control -->
+                    <div class="controls-right">
+                        <!-- Speed -->
+                        <div class="speed" title="playback">
+                            <select name="playbackRate" class="player-speed">
+                                <option value="0.5">0.5 x</option>
+                                <option value="0.75">0.75 x</option>
+                                <option value="1" selected>1 x</option>
+                                <option value="1.5">1.5 x</option>
+                                <option value="2">2 x</option>
+                            </select>
+                        </div>
+                        <!-- Time -->
+                        <div class="time">
+                            <span class="time-elapsed">00:00 / </span>
+                            <span class="time-duration">05:00</span>
+                        </div>
+                        <!-- Fullscreen -->
+                        <div class="fullscreen">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
